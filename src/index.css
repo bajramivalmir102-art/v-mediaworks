@@ -13,3 +13,25 @@ body{background:#08090D;color:#fff;font-family:'Manrope',sans-serif;overflow-x:h
 @keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-40px)}}
 .drift{animation:drift 14s ease-in-out infinite}
 @media (prefers-reduced-motion:reduce){.drift{animation:none}html{scroll-behavior:auto}}
+/* Rregullime për telefon */
+html, body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (max-width: 768px) {
+  *, *::before, *::after {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    background-attachment: scroll !important;
+  }
+
+  [class*="blur-"] {
+    filter: none !important;
+  }
+
+  [class*="animate-"] {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
