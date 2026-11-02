@@ -1,0 +1,15 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:#08090D;color:#fff;font-family:'Manrope',sans-serif;overflow-x:hidden}
+@layer components{
+  .grad-text{@apply bg-gradient-to-r from-violet via-electric to-cyan bg-clip-text text-transparent}
+  .glass{@apply bg-white/[0.04] backdrop-blur-xl border border-white/10}
+  .btn{@apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 font-display text-sm font-bold tracking-wide transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan}
+  .btn-primary{@apply btn bg-gradient-to-r from-violet to-electric text-white shadow-[0_0_40px_-8px_#8B5CF6] hover:shadow-[0_0_60px_-4px_#00D4FF] hover:-translate-y-0.5}
+  .btn-ghost{@apply btn glass hover:bg-white/10}
+  .field{@apply w-full rounded-xl bg-white/[0.05] border border-white/10 px-4 py-3 text-sm placeholder:text-white/35 focus:outline-none focus:border-cyan focus:ring-1 focus:ring-cyan}
+  .section{@apply relative mx-auto max-w-7xl px-5 sm:px-8 py-24 md:py-32}
+}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-40px)}}
+.drift{animation:drift 14s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.drift{animation:none}html{scroll-behavior:auto}}
