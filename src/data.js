@@ -21,13 +21,27 @@ export const WHY = [
   ['Fokus në rezultate','Punojmë për të ndihmuar biznesin tuaj të zhvillohet.'],
 ]
 export const CATS = ['Të gjitha','Website dhe dyqane online','Identitet vizual','Marketing digjital','Dizajn grafik','Fushata reklamuese']
+// Punët reale. Për të shtuar një projekt tjetër, kopjo një rresht dhe ndrysho t, url, img, d.
+// k = mockup rezervë nëse fotoja nuk ngarkohet.
 export const WORKS = [
-  { t:'Dyqan online për modë', c:'Website dhe dyqane online', k:'laptop' },
-  { t:'Faqe për restorant', c:'Website dhe dyqane online', k:'phone' },
-  { t:'Identitet për kafene', c:'Identitet vizual', k:'logo' },
-  { t:'Fushatë Meta Ads për fitness', c:'Marketing digjital', k:'chart' },
-  { t:'Set postimesh për rrjete sociale', c:'Dizajn grafik', k:'cards' },
-  { t:'Fushatë sezonale për kozmetikë', c:'Fushata reklamuese', k:'banner' },
+  {
+    t: 'Tech x Town', c: 'Website dhe dyqane online', k: 'laptop',
+    url: 'https://techxtown.com',
+    img: 'https://techxtown.com/cdn/shop/files/Untitled_1920_x_900_px_1920_x_900_px_385d5e95-36fd-4085-a28e-4f53ccc1555f.png?v=1784820488&width=1000',
+    d: 'Dyqan online Shopify për elektronikë dhe aksesorë: smart watch, kamera sigurie, gaming dhe audio.',
+  },
+  {
+    t: 'AB-COM', c: 'Website dhe dyqane online', k: 'phone',
+    url: 'https://abcom-ks.store',
+    img: 'https://abcom-ks.store/cdn/shop/files/Smart_Home_Gadgets_on_Display.png?v=1793486437&width=1000',
+    d: 'Dyqan online për elektronikë, teknologji dhe produkte për shtëpi, me dërgesë në Kosovë, Shqipëri dhe Maqedoni.',
+  },
+  {
+    t: 'Benny Group', c: 'Website dhe dyqane online', k: 'banner',
+    url: 'https://bennygroup.store',
+    img: 'https://bennygroup.store/cdn/shop/files/Neon_Night_Electric_Scooter.png?v=1792849322&width=1000',
+    d: 'Dyqan online "Të gjitha në një vend": elektronikë, gadget-e, gaming dhe trotinetë elektrikë.',
+  },
 ]
 export const STEPS = [
   ['Konsultimi','Njohja me biznesin dhe objektivat tuaja.'],
