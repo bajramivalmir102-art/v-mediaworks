@@ -21,25 +21,45 @@ export const WHY = [
   ['Fokus në rezultate','Punojmë për të ndihmuar biznesin tuaj të zhvillohet.'],
 ]
 export const CATS = ['Të gjitha','Website dhe dyqane online','Identitet vizual','Marketing digjital','Dizajn grafik','Fushata reklamuese']
-// Punët reale. Për të shtuar një projekt tjetër, kopjo një rresht dhe ndrysho t, url, img, d.
+// Punët reale. Për të shtuar një projekt tjetër, kopjo një bllok dhe ndrysho t, url, banners, d.
+// banners = foto të plota të banerëve (e para shfaqet në kartë, të gjitha hapen në galeri).
 // k = mockup rezervë nëse fotoja nuk ngarkohet.
+const shop = (host, files) => files.map(([f, v]) => `https://${host}/cdn/shop/files/${f}?v=${v}&width=1600`)
 export const WORKS = [
   {
     t: 'Tech x Town', c: 'Website dhe dyqane online', k: 'laptop',
     url: 'https://techxtown.com',
-    img: 'https://techxtown.com/cdn/shop/files/Untitled_1920_x_900_px_1920_x_900_px_385d5e95-36fd-4085-a28e-4f53ccc1555f.png?v=1784820488&width=1000',
+    banners: ['/techxtown-home.jpg', ...shop('techxtown.com', [
+      ['Untitled_1920_x_900_px_1920_x_900_px_385d5e95-36fd-4085-a28e-4f53ccc1555f.png', 1784820488],
+      ['Untitled_design.png', 1784743218],
+      ['Untitled_1920_x_900_px_2.png', 1784752383],
+      ['Untitled_1920_x_900_px_3.png', 1784754859],
+    ])],
     d: 'Dyqan online Shopify për elektronikë dhe aksesorë: smart watch, kamera sigurie, gaming dhe audio.',
   },
   {
     t: 'AB-COM', c: 'Website dhe dyqane online', k: 'phone',
     url: 'https://abcom-ks.store',
-    img: 'https://abcom-ks.store/cdn/shop/files/Smart_Home_Gadgets_on_Display.png?v=1793486437&width=1000',
+    banners: ['/abcom-home.jpg', ...shop('abcom-ks.store', [
+      ['Smart_Home_Gadgets_on_Display.png', 1793486437],
+      ['Modern_Phone_Accessories_on_a_Cozy_Desk.png', 1793486581],
+      ['Cinematic_audio_products_banner.png', 1793486877],
+      ['Personal_care_grooming_products_banner.png', 1793487063],
+      ['Projector_and_Android_TV_banner.png', 1793549617],
+      ['Gaming_products_Instagram_post.png', 1793487195],
+      ['Security_camera_product_banner.png', 1793487293],
+      ['Smartwatch_product_banner_Instagram_Post.png', 1793487406],
+    ])],
     d: 'Dyqan online për elektronikë, teknologji dhe produkte për shtëpi, me dërgesë në Kosovë, Shqipëri dhe Maqedoni.',
   },
   {
     t: 'Benny Group', c: 'Website dhe dyqane online', k: 'banner',
     url: 'https://bennygroup.store',
-    img: 'https://bennygroup.store/cdn/shop/files/Neon_Night_Electric_Scooter.png?v=1792849322&width=1000',
+    banners: ['/benny-home.jpg', ...shop('bennygroup.store', [
+      ['Neon_Night_Electric_Scooter.png', 1792849322],
+      ['Gemini_Generated_Image_xtp8l2xtp8l2xtp8.jpg', 1792693501],
+      ['Gemini_Generated_Image_3kxqkd3kxqkd3kxq.jpg', 1792865211],
+    ])],
     d: 'Dyqan online "Të gjitha në një vend": elektronikë, gadget-e, gaming dhe trotinetë elektrikë.',
   },
 ]
